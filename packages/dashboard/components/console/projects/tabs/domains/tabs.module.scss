@@ -1,0 +1,23 @@
+.t1-text {
+  margin-bottom: 20px;
+
+  &-title {
+    margin-bottom: 18px;
+  }
+
+  &-list {
+    > div {
+      &:nth-child(n + 2) {
+        margin-left: 28px;
+      }
+    }
+  }
+}
+
+.t1-notice {
+  border-radius: 14.5px;
+  border: solid 1px #f7b500;
+  background-color: rgba(247, 181, 0, 0.2);
+  padding: 8px 12px;
+  margin-top: 20px;
+}

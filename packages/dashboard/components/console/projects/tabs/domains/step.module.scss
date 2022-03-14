@@ -1,0 +1,121 @@
+.step-icon {
+  font-size: 25px;
+}
+
+.step-container {
+  display: flex;
+  position: relative;
+  width: 150px;
+  align-items: center;
+  padding: 10px 9px 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: solid 1px transparent;
+
+  &.not-reach {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    &.active {
+      border: solid 1px #1890ff;
+      background-color: rgba(24, 144, 255, 0.2);
+
+      .number-icon {
+        background-color: #1890ff;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 4px solid #1890ff;
+      }
+    }
+  }
+
+  &.failed {
+    background-color: rgba(245, 34, 45, 0.2);
+    &.active {
+      border: solid 1px #f5222d;
+      &::after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 4px solid #f5222d;
+      }
+    }
+  }
+
+  &.pending {
+    background-color: rgba(247, 181, 0, 0.2);
+    &.active {
+      border: solid 1px #faad14;
+      &::after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 4px solid #faad14;
+      }
+    }
+  }
+
+  &.success {
+    background-color: rgba(109, 212, 0, 0.2);
+    &.active {
+      border: solid 1px #52c41a;
+      &::after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 4px solid #52c41a;
+      }
+    }
+  }
+}
+
+.number-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(10, 97, 179, 0.1);
+  font-size: 16px;
+  text-align: center;
+
+  &.failed {
+    background-color: #f5222d;
+  }
+
+  &.pending {
+    background-color: #faad14;
+  }
+}
+
+.step-text {
+  margin-left: 9px;
+  .t1 {
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 12px;
+  }
+  .t2 {
+    font-size: 14px;
+    letter-spacing: 0.18px;
+    color: #000;
+    line-height: 16px;
+  }
+}

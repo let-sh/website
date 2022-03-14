@@ -1,0 +1,125 @@
+.detail {
+  &-wrapper {
+    padding: 29px 34px 23px;
+    background: white;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px 0 rgba(10, 97, 179, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; // max-width: 1000px;
+    @media screen and (max-width: 900px) {
+      padding: 12px 15px 12px;
+    }
+
+    .vertical-line {
+      flex: 0 0 auto;
+      width: 1px;
+      background: rgba(0, 0, 0, 0.15);
+      margin: 0 28px;
+
+      @media screen and (max-width: 900px) {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &-item-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 755px) {
+      flex-direction: column;
+    }
+  }
+
+  &-item-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    max-width: 400px;
+  }
+
+  &-lighthouse-url {
+    font-size: 14px;
+    margin: 26px 0 0;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &-item-title {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 13px;
+  }
+
+  .ant-tabs {
+    overflow: visible;
+  }
+
+  &-function-item {
+    display: flex;
+    font-size: 18px;
+    color: #000;
+    justify-content: space-between;
+  }
+
+  &-function-name {
+    font-weight: bold;
+  }
+
+  &-function-value {
+    font-weight: normal;
+  }
+}
+
+.item {
+  &-channel-container {
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 240px;
+  }
+
+  &-status {
+    display: inline;
+    border-radius: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: rgba(0, 192, 131, 0.22);
+    color: #00c083;
+    letter-spacing: 0.2px;
+    padding: 6px 10px;
+    font-size: 14px;
+
+    &.failed {
+      background-color: rgba(255, 0, 51, 0.45);
+      color: #ff0033;
+    }
+
+    &.queuing,
+    &.running {
+      color: #ff9d00;
+      background-color: rgba(255, 157, 0, 0.22);
+    }
+  }
+}
+
+.env-tag {
+  display: inline;
+  border-radius: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: rgba(7, 134, 255, 0.22);
+  color: #0786ff;
+  letter-spacing: 0.2px;
+  padding: 6px 10px;
+  font-size: 14px;
+
+  &.dev {
+    color: #efa300;
+    background-color: rgba(239, 163, 0, 0.22);
+  }
+}

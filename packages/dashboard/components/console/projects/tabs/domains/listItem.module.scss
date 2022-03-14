@@ -1,0 +1,119 @@
+.container {
+  position: relative;
+  margin: 15px 0;
+  padding: 0 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px 0 rgba(10, 97, 179, 0.1);
+  background-color: #ffffff;
+  max-width: 1280px;
+
+  transition: color 2s, box-shadow 0.3s, transform 0.5s, max-height ease-out 0.5s;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 6px 16px 0 rgba(10, 97, 179, 0.16);
+  }
+
+  // &-open {
+  //   max-height: 66px;
+  // }
+  // &-closed {
+  //   max-height: 266px;
+  // }
+}
+
+.domain-container {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.domain-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+}
+
+.env-tag {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #0786ff;
+  border-radius: 40px;
+  padding: 4px 15px;
+  background-color: rgba(7, 134, 255, 0.22);
+  margin-left: 20px;
+
+  &.dev {
+    color: #efa300;
+    background-color: rgba(239, 163, 0, 0.22);
+  }
+}
+
+.status {
+  position: absolute;
+  right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0786ff;
+}
+
+.domain-status {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+
+  &-text {
+    border-radius: 40px;
+    box-shadow: 0 10px 40px -15px #0786ff;
+    font-family: ProductSans;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 4px 8px;
+  }
+
+  &-icon {
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 12px;
+  }
+
+  &.dns {
+    .domain-status-text {
+      background-color: rgba(224, 32, 32, 0.22);
+      color: #e02020;
+    }
+    .domain-status-icon {
+      color: #e02020;
+    }
+  }
+
+  &.cert {
+    .domain-status-text {
+      background-color: rgba(247, 181, 0, 0.22);
+      color: #f7b500;
+      padding: 4px 10px;
+    }
+    .domain-status-icon {
+      color: #f7b500;
+    }
+  }
+
+  &.signing {
+    .domain-status-text {
+      background-color: rgba(7, 134, 255, 0.22);
+      color: #0786ff;
+      padding: 4px 10px;
+    }
+    .domain-status-icon {
+      color: #0786ff;
+    }
+  }
+}

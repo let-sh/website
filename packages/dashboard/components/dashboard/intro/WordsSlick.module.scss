@@ -1,0 +1,20 @@
+.wordsslick {
+  &-font {
+    font-family: Product Sans;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 64px;
+    color: #ffffff;
+  }
+
+  &-container {
+    background-image: radial-gradient(farthest-corner at 100% 15%, #51ed8f 0%, #0786ff 100%);
+    box-shadow: 0 11px 52px -18px #00daff;
+    border-radius: 25px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+}

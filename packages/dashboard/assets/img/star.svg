@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>星形</title>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-V0.2" transform="translate(-283.000000, -275.000000)" stroke="#FA6400" stroke-width="3">
+            <g id="Body" transform="translate(-459.000000, -686.000000)">
+                <g id="Page1" transform="translate(163.000000, 0.000000)">
+                    <g id="Icons" transform="translate(419.000000, 837.000000)">
+                        <path d="M178,127.713621 L182.19819,137.221688 L192.53821,138.276249 L184.792814,145.207119 L186.985108,155.36694 L178,150.142387 L169.014892,155.36694 L171.207186,145.207119 L163.46179,138.276249 L173.80181,137.221688 L178,127.713621 Z" id="星形"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

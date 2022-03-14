@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="495px" height="386px" viewBox="0 0 495 386" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Website</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="435" height="326" rx="20"></rect>
+        <filter x="-10.6%" y="-13.5%" width="121.1%" height="128.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0274509804   0 0 0 0 0.525490196   0 0 0 0 1  0 0 0 0.200038243 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-V0.2" transform="translate(-868.000000, -1696.000000)">
+            <g id="Body" transform="translate(-746.000000, -2710.000000)">
+                <g id="Page2" transform="translate(287.000000, 3864.000000)">
+                    <g id="Website" transform="translate(1357.000000, 570.000000)">
+                        <g id="矩形">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <rect id="矩形" fill-opacity="0.123497596" fill="#003C75" x="85" y="13" width="332" height="23" rx="11.5"></rect>
+                        <rect id="矩形备份-2" fill-opacity="0.123497596" fill="#003C75" x="20" y="56" width="91" height="256" rx="11.5"></rect>
+                        <rect id="矩形备份-3" fill-opacity="0.123497596" fill="#003C75" x="131" y="56" width="286" height="256" rx="11.5"></rect>
+                        <g id="Bar" transform="translate(21.000000, 19.000000)">
+                            <circle id="椭圆形" fill="#FF5B52" cx="5.5" cy="5.5" r="5.5"></circle>
+                            <circle id="椭圆形备份" fill="#E5C02A" cx="22.5" cy="5.5" r="5.5"></circle>
+                            <circle id="椭圆形备份-2" fill="#54C12C" cx="39.5" cy="5.5" r="5.5"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,165 @@
+.intro {
+  &-container {
+    display: flex;
+    padding: 80px 50px 140px;
+    margin: 0 auto;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-title {
+    font-family: Product Sans;
+    font-weight: bold;
+    font-size: 48px;
+    color: #072a12;
+    position: relative;
+    z-index: 1;
+    &-line1 {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-line2 {
+      text-align: center;
+    }
+  }
+
+  &-text-container {
+    width: 100%;
+  }
+
+  &-join-us {
+    &-btn {
+      &:hover {
+        box-shadow: 0 14px 32px -14px rgb(7 134 255 / 60%);
+        transform: translate(0px, -1px);
+      }
+
+      a:hover {
+        color: white;
+      }
+      font-weight: bold;
+      font-size: 28px;
+      transition: box-shadow 0.2s linear, transform 0.2s linear;
+
+      display: inline-block;
+      margin: 20px auto 10px auto;
+      padding: 5px 20px;
+
+      border-radius: 40px;
+
+      box-shadow: 0 12px 30px -15px rgb(7 134 255 / 60%);
+
+      background-color: #0786ff;
+      color: white;
+    }
+
+    font-family: Product Sans;
+
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    display: block;
+  }
+
+  &-code-preview {
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px 0px rgba(0, 63, 101, 0.6);
+  }
+
+  &-background {
+    position: absolute;
+    &-decorations {
+      position: absolute;
+      width: 30px;
+      top: 1000px;
+      z-index: 1;
+
+      @keyframes floating {
+        0% {
+          transform: translate(0, 0px);
+        }
+        50% {
+          transform: translate(0, 15px);
+        }
+        100% {
+          transform: translate(0, -0px);
+        }
+      }
+
+      &-node {
+        transform: translate(-150px, -480px);
+        width: 140px;
+        height: 140px;
+      }
+
+      &-react {
+        transform: translate(-40px, -480px);
+        width: 140px;
+        height: 140px;
+      }
+
+      &-gatsby {
+        transform: translate(-200px, -470px);
+        width: 140px;
+        height: 140px;
+      }
+
+      &-golang {
+        transform: translate(-100px, -370px);
+        width: 140px;
+        height: 140px;
+      }
+
+      &-hugo {
+        transform: translate(800px, -970px);
+        width: 140px;
+        height: 140px;
+      }
+
+      &-vue {
+        transform: translate(900px, -870px);
+        width: 140px;
+        height: 140px;
+      }
+
+      &-star {
+        transform: translate(50px, -1280px);
+        width: 30px;
+        height: 30px;
+      }
+
+      &-oval {
+        transform: translate(-170px, -240px);
+        width: 20px;
+        height: 20px;
+      }
+
+      &-square {
+        transform: translate(900px, -140px);
+        width: 20px;
+        height: 20px;
+      }
+
+      &-trangle {
+        transform: translate(980px, -640px);
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &-circle {
+      transform: translate(-25%, -25%);
+      border-radius: 50%;
+      width: 2000px;
+      height: 2000px;
+      background-color: white;
+      z-index: -99;
+    }
+  }
+}

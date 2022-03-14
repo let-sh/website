@@ -1,0 +1,35 @@
+.logo {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  &-title {
+    font-family: Product Sans;
+    font-size: 28px;
+    height: 44px;
+    line-height: 44px;
+    font-weight: bold;
+    color: #072a12;
+    margin-right: 6px;
+  }
+
+  &-alpha {
+    width: 50px;
+    height: 26px;
+    padding-bottom: 2px;
+    background: #0786ff;
+    box-shadow: 0 5px 20px -10px #0786ff;
+    border-radius: 29px;
+    border-radius: 29px;
+    font-family: Product Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "dashboard",
+  "type": "static",
+  "link": ["let.sh"],
+  "static": "build",
+  "rewrites": [
+    {
+      "source": "/__github_login",
+      "destination": "/__github_login.html"
+    },
+    {
+      "source": "/console*",
+      "destination": "/console.html"
+    }
+  ]
+}

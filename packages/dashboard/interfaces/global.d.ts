@@ -1,0 +1,12 @@
+declare module 'react-tilt';
+declare module 'react-infinite-scroller';
+declare module 'ansi-to-html';
+declare module 'qs';
+declare module '*.svg';
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.gif';
+declare module '*.bmp';
+declare module '*.ico';
+declare module '*.tiff';

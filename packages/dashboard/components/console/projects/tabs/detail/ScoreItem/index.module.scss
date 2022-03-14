@@ -1,0 +1,59 @@
+$triangle: 7px;
+$red: #eb0f00;
+$orange: #ffa400;
+
+.score {
+  &-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &-check-item {
+    width: 16px;
+    height: 16px;
+    background: no-repeat center;
+    background-image: url(./check.svg);
+
+    .red & {
+      width: 14px;
+      height: 14px;
+      background-image: unset;
+      border-left: $triangle solid transparent;
+      border-right: $triangle solid transparent;
+      border-bottom: #{$triangle * 2} solid $red;
+    }
+
+    .orange & {
+      width: 14px;
+      height: 14px;
+      background-image: unset;
+      background: $orange;
+    }
+  }
+
+  &-text {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 0.22px;
+    margin-left: 10px;
+  }
+
+  &-number {
+    font-family: Product Sans;
+    font-weight: bold;
+    font-size: 18px;
+    color: #00c083;
+    letter-spacing: 0.22px;
+    position: absolute;
+    right: 0;
+
+    .orange & {
+      color: $orange;
+    }
+
+    .red & {
+      color: $red;
+    }
+  }
+}

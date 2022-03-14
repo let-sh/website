@@ -1,0 +1,116 @@
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  // height: 1000px;
+  &-background {
+    position: relative;
+    &-circle-easy {
+      transform: translate(-500px, 0);
+    }
+
+    &-circle-fast {
+      right: 0;
+      margin-left: 100%;
+      transform: translate(-640px, 60px);
+    }
+
+    &-deploy-link {
+      &-code-circle {
+        position: absolute;
+        right: 200px;
+        top: 160px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #0786ff;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0 11px 40px -10px #0786ff;
+        p {
+          font-size: 40px;
+          color: white;
+          font-weight: 800;
+          line-height: 120px;
+          text-align: center;
+        }
+      }
+
+      &-servers {
+        position: absolute;
+        width: 500px;
+        top: 400px;
+        right: 0px;
+      }
+      &-website {
+        position: absolute;
+        width: 360px;
+        top: 660px;
+        right: 60px;
+      }
+      &-earth {
+        position: absolute;
+        width: 600px;
+        top: 1300px;
+        left: -100px;
+      }
+      &-route {
+        position: absolute;
+        width: 1000px;
+        right: -45px;
+        top: 300px;
+        z-index: 0;
+      }
+    }
+  }
+  margin-bottom: 100px;
+}
+
+.feature-item,
+.feature-item-tag {
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.feature-item-active {
+  color: rgb(39, 39, 39);
+  .feature-item-tag {
+    background-color: #0786ff;
+  }
+}
+.feature-item {
+  box-shadow: 0 15px 20px 0px rgb(0 63 101 / 5%);
+
+  transition: 0.2s ease-in-out;
+  transition: transform 0.5s ease-in;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 20px 0px rgb(0 63 101 / 10%);
+  }
+}
+
+.feature-preview {
+  &-container {
+    box-shadow: 0 15px 20px 0px rgb(0 63 101 / 10%);
+    margin: auto;
+    margin-top: 0;
+    height: 100%;
+    padding-top: 37%;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 20px 0px rgb(0 63 101 / 20%);
+    }
+  }
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

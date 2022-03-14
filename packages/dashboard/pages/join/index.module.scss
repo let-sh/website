@@ -1,0 +1,181 @@
+div.logo {
+  justify-content: flex-start;
+  left: 100px;
+  top: 12px;
+  position: absolute;
+
+  @media screen and (max-width: 550px) {
+    left: 43px;
+  }
+}
+
+.join {
+  &-text-container {
+    margin-top: 200px;
+
+    @media screen and (max-width: 550px) {
+      margin-top: 100px;
+    }
+  }
+
+  &-main-text {
+    font-size: 60px;
+    font-weight: bold;
+
+    @media screen and (max-width: 550px) {
+      font-size: 24px;
+    }
+  }
+
+  &-text {
+    color: #7a7a7a;
+    font-size: 24px;
+    margin-top: 12px;
+
+    @media screen and (max-width: 550px) {
+      font-size: 14px;
+    }
+  }
+
+  &-redir-login {
+    @media screen and (max-width: 550px) {
+      font-size: 14px !important;
+    }
+  }
+
+  &-redir-login {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    a {
+      color: #0786ff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  &-email-input {
+    &:focus-within {
+      box-shadow: 0 2px 40px 0 rgb(24 144 255 / 20%);
+      border: #0786ff solid 2px;
+      padding: 9px 10px;
+    }
+    caret-color: #0786ff;
+    transition: border-color 0.4s, box-shadow 0.4s;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 0 2px 40px 0 rgba(204, 204, 204, 0.5);
+    padding: 11px 12px;
+
+    @media screen and (max-width: 550px) {
+      &:focus-within {
+        box-shadow: 0 2px 40px 0 rgb(24 144 255 / 20%);
+        border: #0786ff solid 1px;
+        padding: 5px 7px;
+      }
+      padding: 6px 8px;
+    }
+  }
+
+  &-email-input-wrapper {
+    margin: 40px auto 60px auto;
+
+    @media screen and (max-width: 550px) {
+      margin: 20px auto 0px auto;
+    }
+  }
+}
+
+.input {
+  font-size: 30px;
+  outline: none;
+  border: 0;
+  padding: 0 20px;
+
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  &::placeholder {
+    color: #d6d6d6;
+  }
+}
+
+.invite-btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 25.5px;
+  padding: 3px 24px;
+  background-color: #0786ff;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  color: #fff;
+
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+  }
+}
+
+.message {
+  :global {
+    .ant-message-notice-content {
+      border-radius: 26.5px;
+      padding: 12px 20px;
+    }
+  }
+
+  :global(.ant-message-notice-content .ant-message-custom-content) {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+  }
+
+  :global(.ant-message-custom-content .anticon) {
+    font-size: 24px;
+  }
+}
+
+.tos {
+  max-width: 360px;
+  color: rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+}
+
+.desc-card {
+  padding: 42px 36px;
+  border-radius: 20px;
+  width: 326px;
+  height: 450px;
+  box-shadow: 0 2px 20px 0 rgb(34 158 251 / 20%);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 30px 0 rgb(34 158 251 / 50%);
+  }
+
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-image: radial-gradient(circle at -21% -23%, #3d46e2 0%, #2c78f1 14%, #1babff 104%);
+
+  &-title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 35px;
+    line-height: 1;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+}

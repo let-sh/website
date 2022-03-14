@@ -1,0 +1,42 @@
+.offline-container {
+  background: #ffffff;
+  box-shadow: 0px 3px 10px rgba(10, 97, 179, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 16px;
+  min-height: 80vh;
+  max-height: 750px;
+
+  .title {
+    color: #000000;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .description {
+    color: #979797;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 9px;
+  }
+
+  .dev {
+    background: rgba(7, 134, 255, 0.1);
+    border-radius: 29px;
+    margin-top: 50px;
+    padding: 14px 20px 14px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0.3px;
+    color: #0786ff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

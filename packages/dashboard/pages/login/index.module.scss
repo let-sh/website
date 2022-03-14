@@ -1,0 +1,141 @@
+.left-container {
+  width: 50%;
+  height: 100vh;
+  background-color: #0786ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-left: 140px;
+}
+
+.code {
+  margin-top: 10vh;
+  width: 40vw;
+  height: 58vh;
+  background: url('./login_img.svg') center no-repeat;
+  background-size: contain;
+}
+
+.text1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+  margin-left: 12vw;
+  align-self: stretch;
+}
+
+.text2 {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 12vw;
+  align-self: stretch;
+}
+
+.right-container {
+  width: 50%;
+  height: 100vh;
+  padding-left: 10%;
+  line-height: 1.2;
+  padding-top: 20px;
+}
+
+.text3 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #000;
+  margin-top: 90px;
+}
+
+.text4 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #0786ff;
+}
+
+.text5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #979797;
+}
+
+.text6 {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #aeaeae;
+
+  a {
+    color: #0786ff;
+    text-decoration: underline;
+  }
+}
+
+.text7 {
+  position: absolute;
+  bottom: 10vh;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #8d91a3;
+}
+
+.github {
+  flex-grow: 0;
+  background: #000000;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 19px;
+  margin: 0;
+
+  padding: 16px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 18vh;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  span {
+    // margin-left: 10px;
+    margin: 0 0 0 6px;
+  }
+}
+
+.wechat {
+  flex-grow: 0;
+  background: white;
+  border: 1.5px solid rgba(34, 173, 56, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 16px rgba(33, 173, 56, 0.3);
+  border-radius: 19px;
+  margin: 0;
+
+  padding: 14px 16px;
+  color: rgba(34, 173, 56);
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  &:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  }
+  span {
+    // margin-left: 10px;
+    margin: 0 0 0 6px;
+  }
+}

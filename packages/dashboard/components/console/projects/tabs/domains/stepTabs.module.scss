@@ -1,0 +1,24 @@
+.tab-container {
+  width: 100%;
+  padding: 19px 21px 25px;
+  border-radius: 16px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-left: 14px;
+  letter-spacing: 0.18px;
+  color: #000;
+  font-size: 14px;
+
+  &.not-reach {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+  }
+  &.failed {
+    border: solid 1px #f5222d;
+  }
+  &.pending {
+    border: solid 1px #faad14;
+  }
+  &.success {
+    border: solid 1px #52c41a;
+  }
+}

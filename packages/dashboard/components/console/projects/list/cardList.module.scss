@@ -1,0 +1,59 @@
+.project-card {
+  height: 400px;
+  box-shadow: 0 3px 10px 0 rgba(10, 97, 179, 0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+
+  &-bg {
+    height: 210px;
+    position: relative;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border: 20px solid #fff;
+      border-width: 25px 130px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  &-detail {
+    margin-top: -50px;
+    padding-top: 35px;
+  }
+
+  &-type {
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: rgba(7, 134, 255, 0.3);
+    font-size: 10px;
+    color: #0786ff;
+    letter-spacing: 0.33px;
+    display: inline-block;
+  }
+
+  &-name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &-time {
+    color: rgba(100, 100, 100, 0.6);
+    margin-bottom: 10px;
+  }
+
+  &-domain {
+    display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.35);
+    margin-bottom: 2px;
+    line-height: 16px;
+  }
+}

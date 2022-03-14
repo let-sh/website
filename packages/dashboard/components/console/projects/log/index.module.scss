@@ -1,0 +1,78 @@
+.logs-container {
+  padding-bottom: 12px;
+  margin-top: 102px;
+
+  :global(.ant-card-body) {
+    padding: 8px;
+  }
+
+  .logs-settings {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+}
+
+.logs {
+  &-list {
+    &-item {
+      display: flex;
+      align-items: flex-start;
+
+      &:global(.ant-list-item) {
+        font-family: Monaco, monospace;
+        font-size: 12px;
+        line-height: 20px;
+        justify-content: flex-start;
+        padding: 0;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #eee;
+        }
+      }
+
+      &-info {
+        font-weight: bold;
+        color: #0786ff;
+        word-wrap: none;
+        white-space: nowrap;
+      }
+
+      &-date {
+        color: #6d7278;
+        word-wrap: none;
+        white-space: nowrap;
+      }
+
+      &-content {
+        color: #000000;
+        white-space: break-spaces;
+      }
+    }
+  }
+
+  &-line-num {
+    width: 48px;
+    flex-shrink: 0;
+    color: rgba(149, 157, 165, 0.75);
+  }
+
+  &-line-time {
+    flex-shrink: 0;
+    color: rgba(149, 157, 165, 0.75);
+  }
+}
+
+.logs-container {
+  border-radius: 10px;
+  padding: 10px 8px;
+  background-color: white;
+  box-shadow: 0 3px 10px 0 rgba(10, 97, 179, 0.1);
+
+  .ant-tabs {
+    overflow: visible;
+  }
+}

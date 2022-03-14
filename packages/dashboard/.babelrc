@@ -1,0 +1,27 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "lib", "style": false }, "antd"],
+    [
+      "import",
+      {
+        "libraryName": "@ant-design/icons",
+        "libraryDirectory": "",
+        "style": false,
+        "camel2DashComponentName": false
+      },
+      "@ant-design/icons"
+    ],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "assets": "./assets",
+          "components": "./components",
+          "utils": "./utils",
+          "interfaces": "./interfaces"
+        }
+      }
+    ]
+  ]
+}

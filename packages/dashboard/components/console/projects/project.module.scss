@@ -1,0 +1,170 @@
+@import '../../../assets/style/common';
+
+.project {
+  &-wrapper {
+    margin-left: 40px;
+    // padding-top: 23px;
+    // max-width: 2000px;
+
+    // margin: auto;
+    width: calc(80vw + 30px);
+    height: calc(100% - 40px);
+    margin-top: 23px;
+    max-width: 1080px;
+    overflow-y: scroll;
+    // padding: 0 15px;
+    @media screen and (max-width: 1000px) {
+      width: calc(90vw + 30px);
+    }
+  }
+
+  &-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    background-color: #f5f7fa;
+  }
+
+  &-title {
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  &-active {
+    padding: 4px;
+    color: $deep-blue;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-switch {
+    width: 99px;
+    height: 33px;
+    padding: 3px;
+    background-color: rgba(7, 134, 255, 0.15);
+    border-radius: 20px;
+    margin-right: 64px;
+    display: flex;
+
+    &-icon-active {
+      height: 27px;
+      width: 51px;
+      background-color: $deep-blue;
+      border-radius: 20px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &-icon {
+      height: 27px;
+      width: 49px;
+      color: $deep-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  &-selector {
+    &-container {
+      padding: 3px 16px 6px;
+      border-radius: 20px;
+      background-color: rgba(7, 134, 255, 0.15);
+      cursor: pointer;
+    }
+
+    &-item {
+      font-family: Product Sans;
+      font-size: 18px;
+      color: #0786ff;
+    }
+  }
+
+  &-search {
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 66px;
+  }
+
+  &-item {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px 0 rgba(10, 97, 179, 0.1);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &-top {
+      display: flex;
+    }
+
+    &-name {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    &-bottom {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-tabs {
+    .ant-tabs-bar {
+      margin-bottom: 26px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    &.ant-tabs .ant-tabs-large-bar .ant-tabs-tab {
+      padding: 9px 16px;
+      font-size: 18px;
+      margin: 0 14px 0 0;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:hover,
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: $deep-blue;
+    }
+  }
+
+  &-details {
+    width: 100%;
+  }
+}
+
+.project-dp-version {
+  padding: 3px 16px 6px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.project-tabs-container {
+  padding-top: 75px;
+  max-width: 1420px;
+  position: relative;
+}

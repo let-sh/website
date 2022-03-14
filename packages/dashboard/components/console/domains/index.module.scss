@@ -1,0 +1,117 @@
+.domains {
+  &-container {
+    margin-left: 40px;
+    padding-top: 23px;
+    max-width: 2000px;
+  }
+
+  &-header {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: bold;
+    padding-right: 24px;
+  }
+
+  &-add-btn {
+    background-color: rgb(7 134 255);
+    border-radius: 40px;
+    padding: 6px 20px;
+    box-shadow: 0 5px 20px -10px #0786ff;
+    font-weight: bold;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none;
+      background-color: rgb(6 110 210);
+    }
+  }
+
+  &-list {
+    &-item {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .domain {
+        width: 200px;
+        text-overflow: ellipsis;
+        display: inline-block;
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.domains-card-container {
+  height: 60vh;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: 0 3px 10px 0 rgb(10 97 179 / 10%);
+  overflow-y: auto;
+}
+
+.domains-status {
+  &-success {
+    border-radius: 40px;
+    box-shadow: 0 10px 40px -15px #0786ff;
+    border: solid 1.5px #00c083;
+    background-color: rgba(0, 192, 131, 0.22);
+  }
+
+  &-verified {
+    border-radius: 40px;
+    box-shadow: 0 10px 40px -15px #0786ff;
+    background-color: rgba(255, 157, 0, 0.22);
+    color: #ff9d00;
+  }
+}
+
+.dns-config {
+  padding: 5px 0px 5px 10px;
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-size: 10px;
+  margin-bottom: 14px;
+
+  &-title {
+    font-weight: bold;
+  }
+
+  &-title span,
+  &-detail span {
+    display: inline-block;
+    min-width: 60px;
+  }
+}
+
+.add-modal {
+  padding: 29px 44px 37px 31px;
+  border-radius: 12px;
+  box-shadow: 0 5px 36px -6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+
+  input {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.modal-submit-btn {
+  box-shadow: 0 3px 10px -3px #0786ff;
+  border-radius: 40px;
+  background-color: #0786ff;
+  padding: 6px 20px;
+  min-width: 92px;
+}

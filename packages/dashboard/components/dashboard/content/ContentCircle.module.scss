@@ -1,0 +1,26 @@
+.circle {
+    width: 1000px;
+    height: 1000px; 
+    background-color: white;
+    border-radius: 50%;
+    z-index: -99;
+    
+    &-content-left {
+        padding: 20% 10% 20% 50%;
+    }
+    &-content-right {
+        padding: 25% 40% 20% 20%;
+    }
+    h2 {
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: rgba($color: black, $alpha: 0.5);
+    }
+}

@@ -1,0 +1,60 @@
+.footer {
+  &-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    justify-content: space-between;
+    position: relative;
+    background: white;
+    padding: 50px 50px;
+    color: #8d91a3;
+  }
+  &-inner {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    margin: 0 auto 80px auto;
+    justify-content: space-between;
+    &-logo {
+      flex: 2;
+      width: 400px;
+      height: 100%;
+      font-weight: bold;
+      &-background {
+        background-color: #00c083;
+        color: white;
+        padding: 6px 16px;
+        display: inline-block;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-product {
+      flex: 1;
+    }
+    &-team {
+      flex: 1;
+    }
+    &-help {
+      flex: 1;
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    // max-width: 1200px;
+
+    &-container {
+      font-size: 14px;
+      padding: 10px 0;
+      border-top: 1px solid rgba($color: black, $alpha: 0.1);
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

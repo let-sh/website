@@ -1,0 +1,73 @@
+$defaultColor: #404040;
+$primaryColor: #fff;
+$dangerColor: #fff;
+$warningColor: #404040;
+$defaultBg: #f0f3f5;
+$primaryBg: #0786FF;
+$dangerBg: #e78a67;
+$warningBg: #cb2431;
+$linkColor: #404040;
+$linkActiveColor: #03a9f4;
+
+$defaultPadding: 4px 18px;
+$largePadding: 6px 18px;
+$smallPadding: 3px 12px;
+$defaultBorderWidth: 1px;
+$largeBorderWidth: 2px;
+$smallBorderWidth: 1px;
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px 18px;
+  outline: 0;
+  border: 1px solid;
+  border-color: transparent;
+  color: $defaultColor;
+  border-radius: 18px;
+  background: $defaultBg;
+  cursor: pointer;
+  transition: all .3s linear;
+  user-select: none;
+
+  &:hover {
+    background: darken($defaultBg, 5%);
+  }
+
+  &-disabled {
+    color: #808080;
+    background: lighten($defaultBg, 5%);
+    cursor: default;
+
+    &:hover {
+      background: lighten($defaultBg, 5%)
+    }
+  }
+
+  &-primary {
+    color: $primaryColor;
+    background: $primaryBg;
+
+    &:hover {
+      background: darken($primaryBg, 20%);
+    }
+
+    &-primary&-disabled {
+      background: lighten($primaryBg, 30%)
+    }
+
+  }
+}
+
+

@@ -3064,6 +3064,11 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
+css-class-generator@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/css-class-generator/-/css-class-generator-2.0.0.tgz#611ea8b9565763439779100f2473d03b9a8bd99d"
+  integrity sha512-zlmG8hCTmtc+3Esj1R5PgXCKDqJT1Uqhm8NyALvg3kSjAK0+tByFTkMhEh101V+f7toETM4RGigBU4BjGvphLg==
+
 css-has-pseudo@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/css-has-pseudo/-/css-has-pseudo-0.10.0.tgz#3c642ab34ca242c59c41a125df9105841f6966ee"
@@ -5795,9 +5800,9 @@ minimist-options@4.1.0:
     kind-of "^6.0.3"
 
 minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 minipass-collect@^1.0.2:
   version "1.0.2"
@@ -5960,6 +5965,13 @@ next-images@^1.7.0:
   dependencies:
     file-loader "^6.0.0"
     url-loader "^4.0.0"
+
+next-optimized-classnames@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/next-optimized-classnames/-/next-optimized-classnames-1.0.2.tgz#1c3447dd58ab684b88414e3197e51c6c17626ed2"
+  integrity sha512-qbO0NBE+LObf0QOSQ524yKrriZEMJcJ+CRXUs/WSR0IuDDufJcXdWEZEPPGPUL0LpRFO9CU/MM3v/3U5a1ukaQ==
+  dependencies:
+    css-class-generator "^2.0.0"
 
 next@12.1:
   version "12.1.0"

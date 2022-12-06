@@ -3064,6 +3064,11 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
+css-class-generator@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/css-class-generator/-/css-class-generator-2.0.0.tgz#611ea8b9565763439779100f2473d03b9a8bd99d"
+  integrity sha512-zlmG8hCTmtc+3Esj1R5PgXCKDqJT1Uqhm8NyALvg3kSjAK0+tByFTkMhEh101V+f7toETM4RGigBU4BjGvphLg==
+
 css-has-pseudo@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/css-has-pseudo/-/css-has-pseudo-0.10.0.tgz#3c642ab34ca242c59c41a125df9105841f6966ee"
@@ -5961,6 +5966,13 @@ next-images@^1.7.0:
     file-loader "^6.0.0"
     url-loader "^4.0.0"
 
+next-optimized-classnames@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/next-optimized-classnames/-/next-optimized-classnames-1.0.2.tgz#1c3447dd58ab684b88414e3197e51c6c17626ed2"
+  integrity sha512-qbO0NBE+LObf0QOSQ524yKrriZEMJcJ+CRXUs/WSR0IuDDufJcXdWEZEPPGPUL0LpRFO9CU/MM3v/3U5a1ukaQ==
+  dependencies:
+    css-class-generator "^2.0.0"
+
 next@12.1:
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/next/-/next-12.1.0.tgz#c33d753b644be92fc58e06e5a214f143da61dd5d"
@@ -7291,9 +7303,9 @@ qs@^6.9.4:
     side-channel "^1.0.4"
 
 qs@^6.9.6:
-  version "6.9.6"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
-  integrity sha512-TIRk4aqYLNoJUbd+g2lEdz5kLWIuTMRagAXxl78Q0RiVjAOugHmeKNGdd3cwo/ktpf9aL9epCfFqWDEKysUlLQ==
+  version "6.9.7"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.7.tgz#4610846871485e1e048f44ae3b94033f0e675afe"
+  integrity sha512-IhMFgUmuNpyRfxA90umL7ByLlgRXu6tIfKPpF5TmcfRLlLCckfP/g3IQmju6jjpu+Hh8rA+2p6A27ZSPOOHdKw==
 
 qs@~6.5.2:
   version "6.5.2"
